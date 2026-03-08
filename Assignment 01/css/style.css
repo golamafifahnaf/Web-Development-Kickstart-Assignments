@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    border-radius: 10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(16px);
+    z-index: 1000;
+}
+
+.logo { 
+    height: 40px;
+    padding-left: 13px;
+}
+
+.menu {
+    height: 40px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fde7e9;
+    padding: 40px;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.hero-text h2 {
+    color: #ff136f;
+    margin-bottom: 15px;
+}
+
+.hero-text button {
+    background: #ff136f;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    width: 350px;
+    max-width: 100%;
+}
+
+/* Categories Section */
+.categories {
+    margin-top: 40px;
+}
+
+.categories h2 {
+    margin-bottom: 20px;
+}
+
+.category-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.category {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.watch {
+    background: orange;
+}
+
+.bag {
+    background: pink;
+}
+
+.shoe {
+    background: blue;
+}
+
+.category img {
+    height: 60px;
+}
+
+.category p {
+    font-size: 20px;
+}
+
+/*--- Products ---*/
+.products {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    border:1px solid black;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img {
+    height:160px;
+    width:100%;
+    object-fit:contain;
+    margin-bottom:10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.card h4 {
+    margin-bottom: 10px;
+}
+
+.card button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* SHOES Section */
+.shoes {
+    margin-top: 40px;
+}
+
+.shoes h2 {
+    margin-bottom: 20px;
+}
+
+/* BACKPACK Section */
+.backpack {
+    margin-top: 40px;
+}
+
+.backpack h2 {
+    margin-bottom: 20px;
+}
+
+/* NEWSLETTER Section */
+.newsletter {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background: #fde7e9;
+    padding: 80px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    max-width:300px;
+    margin:auto;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    width: 300px;
+    min-width: 150px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+}
+
+.newsletter-form button {
+    padding:10px 20px;
+    border:none;
+    background:#ff136f;
+    color:white;
+    border-radius:0 6px 6px 0;
+    cursor:pointer;
+}
+
+/* RESPONSIVE PART */
+@media (max-width:1200px) {
+    .hero-text h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 992px){
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .categories h2 {
+        text-align: center;
+    }
+
+    .shoes h2 {
+        text-align: center;
+    }
+
+    .backpack h2 {
+        text-align: center;
+    }
+
+    .category-cards{
+        flex-wrap:wrap;
+    }
+
+    .products {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:640px){
+    .category-cards{
+        flex-direction:column;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items:center;
+        gap: 10px;
+    }
+
+    .newsletter-form input {
+        box-sizing: border-box;
+        border-radius: 6px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .newsletter-form button {
+        width: auto;
+        border-radius: 6px;
+    }
+}
