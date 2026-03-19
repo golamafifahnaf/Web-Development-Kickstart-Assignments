@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Tailwind CDn and connect CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Google Font CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <!-- Font aweosome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <!-- Title and Favicon -->
+        <title>Penguin Fashion</title>
+    </head>
+
+    <body>
+        <header class="bg-[#fffbf0] relative p-4">
+            <!-- Navbar -->
+            <nav class="flex justify-between max-w-7xl mx-auto py-4">
+                <img src="./assets/icons/logo.png" alt="" class="w-[225px] h-[31px]">
+                <ul class="hidden md:flex items-center gap-15 font-semibold">
+                    <li>Home</li>
+                    <li>Product</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+
+                <!-- Hamburger Icon -->
+                <span class="block md:hidden"><i class="fa-solid fa-bars"></i></span>
+            </nav>
+
+            <!-- Hero Section -->
+            <section class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 py-10">
+                <!-- Hero Texts & Buttons -->
+                <div class="flex-1">
+                    <!-- Text -->
+                    <h2 class="text-[#fabe4c] text-5xl md:text-7xl">Be the Penguins</h2>
+                    <h2 class="text-[#363958] text-5xl md:text-7xl">of winter</h2>
+                    <p class="text-[18px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    
+                    <!-- Button -->
+                    <button class="button-linear-gradient rounded-[10px] w-[170px] h-[60px] inline-block cursor-pointer font-semibold text-white mt-3.5">
+                        <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+                    </button>
+                </div>
+
+                <!-- Hero Image -->
+                <img src="./assets/images/model.png" alt="">
+            </section>
+
+            <!-- Dots png -->
+            <img src="./assets/icons/banner_dot.png" alt="" class="w-0 md:w-20 lg:w-[120px] absolute top-0 left-[32%] lg:left-[40%]">
+        </header>
+
+        <!-- Women Section -->
+        <section class="max-w-7xl mx-auto my-[70px]">
+            <h2 class="text-[48px] text-center md:text-left p-4">WOMEN JACKET</h2>
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+                <!-- Product 1 -->
+                <div class="flex-1 rounded-[26px] shadow-xl p-4">
+                    <!-- Product Image -->
+                    <div class="bg-gray-100 rounded-xl p-4">
+                        <img src="./assets/images/jacket-1.png" class="mx-auto h-60 object-contain">
+                    </div>
+
+                    <!-- Product Name -->
+                    <h4 class="text-[24px] font-bold">Yellow Cout Jacket</h4>
+
+                    <!-- Product Details -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, provident.</p>
+
+                    <!-- Price and Button -->
+                    <div class="flex items-center justify-between gap-4">
+                        <h4 class="text-[#fabe4c] font-extrabold text-[26px] lg:text-[36px]">$234</h4>
+                        <button class="button-linear-gradient rounded-[10px] w-[170px] h-[60px] inline-block cursor-pointer font-semibold text-white mt-3.5">
+                            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="flex-1 rounded-[26px] shadow-xl p-4">
+                    <!-- Product Image -->
+                    <div class="bg-gray-100 rounded-xl p-4">
+                        <img src="./assets/images/jacket-2.png" class="mx-auto h-60 object-contain">
+                    </div>
+
+                    <!-- Product Name -->
+                    <h4 class="text-[24px] font-bold">Ladies Jacket</h4>
+
+                    <!-- Product Details -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, provident.</p>
+
+                    <!-- Price and Button -->
+                    <div class="flex items-center justify-between gap-4">
+                        <h4 class="text-[#fabe4c] font-extrabold text-[26px] lg:text-[36px]">$234</h4>
+                        <button class="button-linear-gradient rounded-[10px] w-[170px] h-[60px] inline-block cursor-pointer font-semibold text-white mt-3.5">
+                            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="flex-1 rounded-[26px] shadow-xl p-4">
+                    <!-- Product Image -->
+                    <div class="bg-gray-100 rounded-xl p-4">
+                        <img src="./assets/images/jacket-3.png" class="mx-auto h-60 object-contain">
+                    </div>
+
+                    <!-- Product Name -->
+                    <h4 class="text-[24px] font-bold">Woman Leather Jacket</h4>
+
+                    <!-- Product Details -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, provident.</p>
+
+                    <!-- Price and Button -->
+                    <div class="flex items-center justify-between gap-4">
+                        <h4 class="text-[#fabe4c] font-extrabold text-[26px] lg:text-[36px]">$234</h4>
+                        <button class="button-linear-gradient rounded-[10px] w-[170px] h-[60px] inline-block cursor-pointer font-semibold text-white mt-3.5">
+                            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Men section -->
+        <section class="max-w-7xl mx-auto my-[70px]">
+            <h2 class="text-[48px] text-center md:text-left p-4">MEN JACKET</h2>
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+                <!-- Product 1 -->
+                <div class="flex-1 rounded-[26px] shadow-xl p-4">
+                    <!-- Product Image -->
+                    <div class="bg-gray-100 rounded-xl p-4">
+                        <img src="./assets/images/jacket-4.png" class="mx-auto h-60 object-contain">
+                    </div>
+
+                    <!-- Product Name -->
+                    <h4 class="text-[24px] font-bold">Snowboard Jacket Men</h4>
+
+                    <!-- Product Details -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, provident.</p>
+
+                    <!-- Price and Button -->
+                    <div class="flex items-center justify-between gap-4">
+                        <h4 class="text-[#fabe4c] font-extrabold text-[26px] lg:text-[36px]">$234</h4>
+                        <button class="button-linear-gradient rounded-[10px] w-[170px] h-[60px] inline-block cursor-pointer font-semibold text-white mt-3.5">
+                            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="flex-1 rounded-[26px] shadow-xl p-4">
+                    <!-- Product Image -->
+                    <div class="bg-gray-100 rounded-xl p-4">
+                        <img src="./assets/images/jacket-5.png" class="mx-auto h-60 object-contain">
+                    </div>
+
+                    <!-- Product Name -->
+                    <h4 class="text-[24px] font-bold">Men Leather Jacket</h4>
+
+                    <!-- Product Details -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, provident.</p>
+
+                    <!-- Price and Button -->
+                    <div class="flex items-center justify-between gap-4">
+                        <h4 class="text-[#fabe4c] font-extrabold text-[26px] lg:text-[36px]">$234</h4>
+                        <button class="button-linear-gradient rounded-[10px] w-[170px] h-[60px] inline-block cursor-pointer font-semibold text-white mt-3.5">
+                            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="flex-1 rounded-[26px] shadow-xl p-4">
+                    <!-- Product Image -->
+                    <div class="bg-gray-100 rounded-xl p-4">
+                        <img src="./assets/images/jacket-6.png" class="mx-auto h-60 object-contain">
+                    </div>
+
+                    <!-- Product Name -->
+                    <h4 class="text-[24px] font-bold">Men Casual Jacket</h4>
+
+                    <!-- Product Details -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, provident.</p>
+
+                    <!-- Price and Button -->
+                    <div class="flex items-center justify-between gap-4">
+                        <h4 class="text-[#fabe4c] font-extrabold text-[26px] lg:text-[36px]">$234</h4>
+                        <button class="button-linear-gradient rounded-[10px] w-[170px] h-[60px] inline-block cursor-pointer font-semibold text-white mt-3.5">
+                            <i class="fa-solid fa-cart-shopping"></i> BUY NOW
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row my-[70px] gap-10 justify-between items-center p-4">
+            <!-- Footer Cards -->
+            <div class="grid grid-rows-3 gap-5">
+                <!-- Card 1 -->
+                <div class="flex-row lg:flex text-center lg:text-left max-w-[489px] rounded-[20px] shadow-xl p-3 gap-[15px]">
+                    <!-- Image -->
+                    <div class="max-w-[78px] mx-auto">
+                        <img src="./assets/icons/house.png" alt="">
+                    </div>
+
+                    <!-- Texts -->
+                    <div>
+                        <h4 class="font-semibold text-2xl">Find the Perfect Fit</h4>
+                        <p>Everybody is different, which is why we offer styles for every body.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex-row lg:flex text-center lg:text-left max-w-[489px] rounded-[20px] shadow-xl p-3 gap-[15px]">
+                    <!-- Image -->
+                    <div class="max-w-[78px] mx-auto">
+                        <img src="./assets/icons/box.png" alt="">
+                    </div>
+
+                    <!-- Texts -->
+                    <div>
+                        <h4 class="font-semibold text-2xl">Free Exchanges</h4>
+                        <p>One of many reasons you can shop with peace of mind.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex-row lg:flex text-center lg:text-left max-w-[489px] rounded-[20px] shadow-xl p-3 gap-[15px]">
+                    <!-- Image -->
+                    <div class="max-w-[78px] mx-auto">
+                        <img src="./assets/icons/question.png" alt="">
+                    </div>
+
+                    <!-- Texts -->
+                    <div>
+                        <h4 class="font-semibold text-2xl">Contact Our Seller</h4>
+                        <p>THey are here to help you. That's quite literally what we pay them for.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shopping Image -->
+            <img src="./assets/images/shopping.png" alt="" class="w-[489px] mx-auto">
+        </section>
+    </body>
+</html>
