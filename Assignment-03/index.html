@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth box-border">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Aweosome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Title -->
+    <title>Portfolio</title>
+</head>
+<body class="bg-black relative z-10 flex justify-center min-h-screen">
+
+    <div class="bg-[#18181B] border border-[#2a2a2b] max-w-[1500px] mx-auto fixed inset-0 z-0"></div>
+
+    <main class="relative max-w-7xl min-h-screen p-4">
+        <!-- Navbar -->
+        <header class="max-w-7xl w-full flex justify-center items-center mt-5">
+            <div class="flex flex-wrap justify-center md:justify-between items-center py-3 px-4 md:px-6 
+            bg-[#252529] border border-[#2a2a2b] rounded-full 
+            gap-3 md:gap-6 text-[12px] md:text-sm lg:text-base font-semibold">
+                <a class="text-[#d4d4d8] hover:text-[#00d5be]" href="#">About</a>
+                <a class="text-[#d4d4d8] hover:text-[#00d5be]" href="#">Articles</a>
+                <a class="text-[#d4d4d8] hover:text-[#00d5be]" href="#">Projects</a>
+                <a class="text-[#d4d4d8] hover:text-[#00d5be]" href="#">Speaking</a>
+                <a class="text-[#d4d4d8] hover:text-[#00d5be]" href="#">Uses</a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="max-w-7xl flex flex-col-reverse lg:flex-row gap-10 justify-between items-center text-center lg:text-left mt-20">
+            <div class="flex-1">
+                <!-- Hero Text -->
+                <div class="max-w-2xl">
+                    <h1 class="text-[#f4f4f5] font-bold tracking-tight text-4xl sm:text-5xl ">Software designer, founder, and amateur astronaut.</h1>
+                    <p class="text-[#949494] text-xl mt-5">I’m Spencer, a software designer and entrepreneur based in New York City. 
+                        I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people 
+                        to explore space on their own terms.
+                    </p>
+                </div>
+                
+                <!-- Social Icons -->
+                <div class="flex justify-center lg:justify-start gap-5 text-[25px] mt-5">
+                    <a href="" class="text-[#949494] hover:text-[#d4d4d8] pointer"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="" class="text-[#949494] hover:text-[#d4d4d8] pointer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="text-[#949494] hover:text-[#d4d4d8] pointer"><i class="fa-brands fa-github"></i></a>
+                    <a href="" class="text-[#949494] hover:text-[#d4d4d8] pointer"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+
+            </div>
+            <!-- Hero Image -->
+            <img class="size-[200px] lg:size-[300px] rounded-full lg:rounded-3xl rotate-0 lg:rotate-3" src="./assets/person.jpg" alt="">
+            
+        </section>
+
+        <section class="mt-16 overflow-hidden">
+            <div id="photorow" class="flex gap-6 overflow-x-auto no-scrollbar px-4 py-5">
+        
+                <img src="./assets/image-1.webp" class="w-60 h-40 rounded-2xl object-cover rotate-6">
+                <img src="./assets/image-2.webp" class="w-60 h-40 rounded-2xl object-cover -rotate-6">
+                <img src="./assets/image-3.webp" class="w-60 h-40 rounded-2xl object-cover rotate-6">
+                <img src="./assets/image-4.webp" class="w-60 h-40 rounded-2xl object-cover -rotate-6">
+                <img src="./assets/image-5.webp" class="w-60 h-40 rounded-2xl object-cover rotate-6">
+        
+            </div>
+        </section>
+    </main>
+
+    <script>
+    const row = document.getElementById("photoRow");
+
+    window.addEventListener("scroll", () => {
+    const rect = row.getBoundingClientRect();
+
+    // only when section is visible
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+        
+        // how much section is visible
+        const progress = window.innerHeight - rect.top;
+
+        // control speed here
+        row.scrollLeft = progress * 0.5;
+    }
+    });
+    </script>
+
+</body>
+</html>
